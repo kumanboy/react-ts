@@ -1,11 +1,9 @@
-import UserProfile from "./components/UserProfile.tsx";
+import Form from "./components/Form.tsx";
 
 const App = () => {
-
-
     return (
         <div>
-            <UserProfile/>
+            <Form/>
         </div>
     );
 };
