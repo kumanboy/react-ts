@@ -1,13 +1,38 @@
-// import FormInput from "./components/FormInput.tsx";
+import React from "react";
+import { LanguageProvider, useLanguage } from "./context/LanguageContext";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
-import EventHandling from "./components/EventHandling.tsx";
+// Dictionary for translations
+const translations = {
+    en: {
+        greeting: "Welcome to our website!",
+        description: "This is a simple language switcher example using useContext.",
+    },
+    uz: {
+        greeting: "Veb-saytimizga xush kelibsiz!",
+        description: "Bu useContext yordamida yaratilgan oddiy til almashtirgich.",
+    },
+};
 
-const App = () => {
+const Content = () => {
+    const { language } = useLanguage();
+
     return (
-        <div>
-            {/*<FormInput/>*/}
-            <EventHandling/>
+        <div className="container">
+            <h1>{translations[language].greeting}</h1>
+            <p>{translations[language].description}</p>
         </div>
+    );
+};
+
+const App: React.FC = () => {
+    return (
+        <LanguageProvider>
+            <div className="app">
+                <LanguageSwitcher />
+                <Content />
+            </div>
+        </LanguageProvider>
     );
 };
 
