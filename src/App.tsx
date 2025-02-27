@@ -1,9 +1,12 @@
-import Form from "./components/Form.tsx";
+// import FormInput from "./components/FormInput.tsx";
+
+import EventHandling from "./components/EventHandling.tsx";
 
 const App = () => {
     return (
         <div>
-            <Form/>
+            {/*<FormInput/>*/}
+            <EventHandling/>
         </div>
     );
 };
