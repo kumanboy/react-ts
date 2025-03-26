@@ -1,12 +1,9 @@
-// import Quiz from "./components/Quiz.tsx";
-
-import UserSearch from "./components/UserSearch.tsx";
+import UserList from "./components/UserList.tsx";
 
 const App = () => {
     return (
         <div>
-            {/*<Quiz/>*/}
-            <UserSearch/>
+            <UserList/>
         </div>
     )
 }
