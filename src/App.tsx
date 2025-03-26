@@ -1,9 +1,10 @@
-import UserList from "./components/UserList.tsx";
+// import UserList from "./components/UserList.tsx";
+import {MyForm} from "./components/MyForm.tsx";
 
 const App = () => {
     return (
         <div>
-            <UserList/>
+            <MyForm/>
         </div>
     )
 }
