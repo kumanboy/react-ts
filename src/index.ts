@@ -7,6 +7,6 @@ const isValidPhone = (phone: string): boolean => {
 };
 
 // ✅ Testing
-console.log(isValidPhone("+1989012345")); // true
+console.log(isValidPhone("+1 98 901 23 45")); // true
 console.log(isValidPhone("+998901234567")); // true
 console.log(isValidPhone("998 90 123 45 67")); // false (+ belgisi qolib ketgan)
